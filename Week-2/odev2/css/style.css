@@ -1,0 +1,215 @@
+/* Nav ve Footer için Genel Stil Ayarları */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+/* Footer sabit konumlandırma */
+footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 50px; /* Yükseklik değeri ve birimi düzenlendi */
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    background-color:#f2f2f2 ;/* Footer için arka plan rengi eklendi */
+}
+
+/* Liste öğeleri için stil ayarları */
+.nav-left, .nav-right, .footer-left li, .footer-right li {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+
+}
+
+
+.nav-left li, .nav-right li, .footer-left li, .footer-right li {
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+.nav-right, .footer-right {
+    display: flex;
+    align-items: center;
+    margin: 2 10 px;
+}
+
+.nav-right li, .footer-right li {
+    margin: 0 10px;
+}
+
+.with-radius {
+    border-radius: 50px; /* Yuvarlak köşeler için */
+}
+
+/* Ana İçerik ve Arama Kutusu için Stil Ayarları */
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px; /* İçerik ve nav arasındaki mesafeyi ayarlar */
+    padding-bottom: 60px; /* Footer üzerine içeriğin gelmemesi için alt boşluk */
+}
+
+.container {
+    text-align: center;
+    margin: 100px;
+}
+  
+.search-area {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: -127px;
+    width: 582px;
+    border-radius: 22px; 
+    justify-content: center;
+    position: relative; /* Konumlandırma için */
+
+}
+  
+.search-area:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+  
+.search {
+    flex: 1;
+    display: flex;
+   
+    padding-left: 14px;
+    align-items: center; /* İçerikleri dikeyde ortala */
+    position: relative; /* İç içe konumlandırma */
+    
+}
+  
+.search-img {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+   
+}
+  
+.search-img span {
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+    display: inline-block;
+    fill: currentColor;
+    line-height: 24px;
+    position: relative;
+}
+  
+.input-enter {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+  
+.input-area {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    font: 16px arial, sans-serif;
+    line-height: 34px;
+    height: 34px !important;
+    display: block;
+}
+  
+.input {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -69px;
+    font: 16px arial, sans-serif;
+    line-height: 34px;
+    height: 34px !important;
+    width: 460px;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: textfield;
+    cursor: text;
+}
+  
+/* Sayfanın içeriği footer ile çakışmasın diye body'e ek padding */
+body {
+    margin: 0;
+    padding-bottom: 60px; /* Footer yüksekliğinden biraz daha fazla olmalı */
+    font-family: Arial; /* Varsayılan font eklendi */
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.googlesearch {
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px #f2f2f2;
+    font-family: Arial; /* Varsayılan font eklendi */
+    font-size: 14px;
+    color: #5f6368;
+    background-color: #f2f2f2;
+    height: 36px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+    
+}
+  
+.button {
+    text-align: center;
+    
+    
+}
+  
+.feelinglucky {
+    padding: 0 16px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px #f2f2f2;
+    font-family: Arial;
+    font-family: Arial; /* Varsayılan font eklendi */
+    font-size: 14px;
+    color: #5f6368;
+    background-color: #f2f2f2;
+    height: 36px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+.voice-search {
+    position: absolute;
+    right: 20px; /* Arama kutusunun sağında */
+    height: 24px; /* Resmin boyutu */
+    padding-top: 5px;
+    
+}
+a {
+    text-decoration: none;
+}
+
+ 
+  
+  
