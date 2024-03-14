@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Pure Paws</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Evcil Hayvan Bakımı Logo" style="height: 50px">
+        <h1>Evcil Hayvan Bakımı</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact-content">
+            <h2>İletişim</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>İletişim: info@purepaws.com | Telefon: 123 456 78 90</p>
+        <p>&copy; 2024 Pure Paws. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
