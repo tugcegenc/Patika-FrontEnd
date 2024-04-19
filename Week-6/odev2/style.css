@@ -57,3 +57,72 @@ h4 {
 .menu-text {
   padding-top: 20px;
 }
+/* Stil dosyası (style.css) */
+.menu-item {
+  margin-bottom: 30px;
+}
+
+.menu-img {
+  width: 100%;
+  height: 200px; /* İstediğiniz yüksekliği ayarlayabilirsiniz */
+  object-fit: cover;
+}
+
+/* Küçük ekranlar için fotoğraf boyutlarını ayarla */
+@media screen and (max-width: 768px) {
+  .menu-img {
+    height: 150px; /* Küçük ekranlarda daha küçük bir yükseklik ayarı */
+  }
+}
+/* Stil dosyası (style.css) */
+.menu-item {
+  display: flex; /* Öğeleri yan yana hizala */
+  align-items: center; /* Dikeyde hizalama */
+  margin-bottom: 30px;
+}
+
+.menu-img {
+  width: 200px; /* Fotoğraf genişliği */
+  height: 200px; /* Fotoğraf yüksekliği */
+  object-fit: cover;
+  margin-right: 20px; /* Fotoğraf ile yazı arasında boşluk bırak */
+}
+
+.menu-info {
+  flex: 1; /* Kalan alanı kapla */
+}
+
+.menu-title {
+  font-size: 1.2rem; /* Başlık yazı boyutu */
+  margin-bottom: 5px; /* Başlık altında boşluk bırak */
+  color: #e00a00;
+}
+
+.menu-price {
+  font-weight: bold; /* Fiyatı kalın yap */
+  margin-bottom: 5px; /* Fiyat altında boşluk bırak */
+}
+
+.menu-category {
+  font-style: italic; /* Kategori yazısını italik yap */
+  margin-bottom: 5px; /* Kategori altında boşluk bırak */
+}
+
+.menu-desc {
+  font-size: 0.9rem; /* Açıklama yazı boyutu */
+}
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.title, .price {
+  font-size: 1.5rem; /* Veya ihtiyaca göre başka bir boyut */
+  font-weight: bold;
+}
+
+.price {
+  color: green; /* Fiyat bilgisini vurgulamak için renk değişikliği */
+}

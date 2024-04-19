@@ -58,3 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
       $(".success").toast("show").text(message);
   }
 });
+// Yeni bir öğe eklerken
+localStorage.setItem('todoList', JSON.stringify(todoList));
+
+// Sayfa yüklendiğinde
+let todoList = JSON.parse(localStorage.getItem('todoList'));
+
