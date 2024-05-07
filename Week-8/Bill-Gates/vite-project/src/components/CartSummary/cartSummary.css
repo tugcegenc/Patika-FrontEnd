@@ -1,0 +1,63 @@
+/* cartSummary.css */
+.cart-summary {
+  font-family: Arial, sans-serif;
+  padding: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.cart-summary h2 {
+  text-align: center;
+}
+
+.product-name {
+  flex: 2; /* İsim daha fazla alan kaplasın */
+  text-align: left;
+  margin-left: 25%;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.product-quantity {
+  flex: 1;
+  text-align: center;
+}
+
+.product-price {
+  flex: 1;
+  text-align: left;
+  margin-right: 25%;
+  color: #29c87c;
+}
+
+.total-spent {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative; /* ::before için bir temel sağlar */
+  margin-bottom: 10px;
+}
+
+.total-spent::before {
+  content: ""; /* Pseudo-elementler için content gereklidir */
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.price {
+  flex: -2;
+  color: #29c87c;
+}

@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+}
+.data {
+  font-size: 40px;
+  display: inline-block;
+  background-color: #23c487;
+  height: 65px;
+  width: 100%;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 13%;
+}
